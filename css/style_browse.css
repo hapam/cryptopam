@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0;padding:0}
+
+body{font:11px Verdana, Arial, Helvetica, sans-serif; color:#070707;background:#E8E8E8}
+
+a{text-decoration:none;color:#001C4D}
+a:hover{color:#FF6131}
+
+.curPath{padding:10px;font-size:14px}
+.curPath b{font-size:12px}
+.curPath span{font-size:11px}
+
+.file-tab{font-size:100%}
+.file-tab th{background:#DDDBD2;color:#7A92C2;padding:8px 8px 6px;text-align:left;border-right:#7A92C2 2px groove}
+.file-tab td{background:#F2F1EE;padding:5px;border-right:#7A92C2 2px groove}

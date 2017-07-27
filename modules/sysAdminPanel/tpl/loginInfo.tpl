@@ -1,0 +1,3 @@
+<p>Lần trước: <b class="col-cyan">{$cUser.history.last_login|date_format:"%d/%m/%Y - %H:%M:%S"}</b> (<b class="col-{if $cUser.last_ip == $cUser.history.last_ip}teal{else}red{/if}">IP: {$cUser.history.last_ip}</b>)</p>
+<p>Hiện tại: <b class="col-cyan">{$cUser.last_login|date_format:"%d/%m/%Y - %H:%M:%S"}</b> (<b class="col-{if $cUser.last_ip == $cUser.history.last_ip}teal{else}red{/if}">IP: {$cUser.last_ip}</b>)</p>
+<p>Đăng kí: <b class="col-cyan">{$cUser.created|date_format:"%d/%m/%Y - %H:%M:%S"}</b> (<b>IP: {$cUser.reg_ip}</b>)</p>

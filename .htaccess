@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+#Default
+RewriteRule ^(.*)\.html(.*)$    index.php?q=$1$2    [QSA,NC]
+
+ErrorDocument 404 /ezcms/error.html
+ErrorDocument 403 /ezcms/error.html

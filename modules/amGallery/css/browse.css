@@ -1,0 +1,70 @@
+/* ------------------- POPUP THEME ------------------- */
+.popup-content-container{opacity:0.4;z-index:10002}
+.popup-overlay-bg{top:0;left:0;z-index:10001;width:100%;opacity: 0.6;background: url("images/pageOverlay.png") repeat scroll 0 0 #AAAAAA}
+.popup-bg-white{
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px}
+.popup-title-bg{padding-left:14px;font-size:12px;font-weight:bold;height:40px;line-height:40px;cursor:pointer;border-bottom: 1px solid #CDCDCD;
+/*-moz-border-radius: 5px 5px 0 0;*/
+/*-webkit-border-radius: 5px 5px 0 0;*/
+/*border-radius: 5px 5px 0 0*/
+}
+.popup-footer{background:#e8e8e8;padding:10px 0;border-top:1px solid #CDCDCD;
+/*-moz-border-radius: 0 0 5px 5px;*/
+/*-webkit-border-radius: 0 0 5px 5px;*/
+/*border-radius: 0 0 5px 5px*/
+}
+.popup-footer button{ font-size: 11px; color: #fff; font-weight: bold; text-shadow: 0 -1px #6f6f6f; display: inline-block; line-height: 14px; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; padding: 7px 16px; margin: 0 5px; border: 1px solid #3e76af; box-shadow: 0 1px 2px 0 #66b2d2 inset; background: #5ba5cb; background: -moz-linear-gradient(top,  #5ba5cb 0%, #3a70ab 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5ba5cb), color-stop(100%,#3a70ab)); background: -webkit-linear-gradient(top,  #5ba5cb 0%,#3a70ab 100%); background: -o-linear-gradient(top,  #5ba5cb 0%,#3a70ab 100%); background: -ms-linear-gradient(top,  #5ba5cb 0%,#3a70ab 100%); background: linear-gradient(top,  #5ba5cb 0%,#3a70ab 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ba5cb', endColorstr='#3a70ab',GradientType=0 ); }
+.popup-footer button:hover { opacity: 0.95; -webkit-transition: opacity 0.2s ease-in-out; }
+.popup-footer button:active { background: #4786b8; box-shadow: 0 0 2px #707070 inset, 0 1px 0 #fff; }
+
+#popup-container{padding:20px;color:#5F5F5F;background:#f5f5f5;
+-moz-border-radius: 0 0 3px 3px;
+-webkit-border-radius: 0 0 3px 3px;
+border-radius: 0 0 3px 3px}
+.popup-close-button {background:url(images/close.png) no-repeat;width: 19px;height: 19px;float: right;margin: 7px}
+.pcb-blue-normal,.pcb-blue-hover,
+.pcb-red-normal,.pcb-red-hover,
+.pcb-orange-normal,.pcb-orange-hover
+{opacity:0.6;height:17px;width:17px;margin:12px 10px;background: url("images/ui-icons_222222_256x240.png") -96px -128px}
+
+.pcb-blue-hover,
+.pcb-red-hover,
+.pcb-orange-hover
+{background-color: #fafafa;background-image: url(images/ui-icons_454545_256x240.png);
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px}
+
+/*popup-form*/
+#popup-form{padding:10px 12px}
+#popup-form input[type=text], #popup-form input[type=password], #popup-form textarea { font-size: 11px; padding: 6px 5px; background: white; border: 1px solid #DDD; font-family: Arial, Helvetica, sans-serif; box-shadow: 0 0 0 2px #f4f4f4; color: #656565; margin: 10px auto; display: block; box-sizing: border-box; float:left}
+#popup-form td{text-align:left;vertical-align:middle}
+#popup-form td.r{text-align:right}
+#popup-form td.c{text-align:center}
+#popup-form .showErr{float:left;padding:15px 0 0 10px}
+
+.pop-confirm{padding:20px 20px 20px 60px;color:black;background:url(images/consulting.png) no-repeat 15px center}
+.msg-error,.msg-notice,.msg-normal{padding:20px 20px 20px 60px;color:green;background:url(images/check.png) no-repeat 15px center;font-size:16px}
+.msg-notice{color:#F28E37;background-image:url(images/brainstorming.png)}
+.msg-error{color:red;background-image:url(images/busy.png)}
+
+/* notify msg */
+#access_notify {background-color: white;display: none}
+#access_notify .lock {background:url(images/lock.gif) center center no-repeat;float: left;width: 60px;height: 60px}
+#access_notify .notify {margin-left: 64px;font-size: 14px;font-weight: bold}
+
+/* classic popup */
+.popup-content-container,.classic-popup{padding:3px;background: rgba(255,255,255, 0.24);
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px}
+.classic-popup-title{width:100%;background:#71BF45}
+.classic-popup-title,.classic-popup-title .fl,a.classic-popup-close{height:40px;line-height:40px;font-weight:bold;color:#fff}
+.classic-popup-title .fl{padding-left:20px;font-size:16px;text-transform:uppercase;text-shadow:0 1px 0 #666666}
+a.classic-popup-close{float:right;font-family:Tahoma,Geneva,sans-serif;font-size:18px;line-height: 35px;padding:0 10px}
+a.classic-popup-close:hover{text-decoration:none;color:#4f2d00}
+.classic-popup-content{width:100%;background:#fff;color:#472900}
+
+/* -------------------------- END POPUP THEME ---------------------- */

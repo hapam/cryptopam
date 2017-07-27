@@ -1,0 +1,23 @@
+/* root Panel */
+.rootPanel{background:#ffffb0;width:100%;position:fixed;top:0;left:0;z-index:9999999999999999999;}
+.rootPanel .content{padding:10px}
+.rootPanel .showArrow{background:#ffd850 url(images/arrow-down.gif) no-repeat center center; height:10px;cursor:pointer}
+.editMode{border-bottom:1px solid #ccc;border-top:1px solid #fff;background:#ffffb0}
+.editMode .regionName{background:#ffd850;padding:10px;color:red;font-size:14px;font-weight:bold;text-align:left}
+.editMode .regionName span{color:#fff}
+.block-name{background:#00A0DC;padding:5px;color:#fff;font-size:14px;border-bottom:1px solid #fff}
+.list-module{height:450px;overflow-y:scroll}
+.list-panel{background:#ccc}
+.list-panel th{color:#2c2c2c;background:#eee;padding:5px;font-weight:bold}
+.list-panel td{padding:5px;background:#fff}
+
+/* debug */
+.admin_debug table{border-collapse: inherit}
+.admin_debug table td{padding: 6px}
+
+/* default */
+.hide_me{display:none}
+.fl{float:left}
+.fr{float:right}
+.c{clear:both}
+.mLeft20{margin-left:20px}
