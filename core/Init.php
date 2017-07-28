@@ -26,6 +26,7 @@ if(isset($_REQUEST['trigger']) && (int)$_REQUEST['trigger']==1) exit();
 CGlobal::$arrPage = CacheLib::get('arr_page',3600);
 if(!CGlobal::$arrPage){
 	$result = DB::select(T_PAGE);
+	echo 1;exit();
 	if(!empty($result)){
 		foreach($result as $row){
 			CGlobal::$arrPage[$row['name']] = $row;
@@ -33,7 +34,6 @@ if(!CGlobal::$arrPage){
 	}
 	CacheLib::set('arr_page',CGlobal::$arrPage,3600);
 }
-echo 1;exit();
 
 //current page
 CGlobal::$current_page = Url::fetchUrlArg();
