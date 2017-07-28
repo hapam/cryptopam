@@ -7,13 +7,26 @@ define('ROOT_PATH', str_replace(array('config/'),array(''),strtr(dirname( __FILE
 
 echo 'root: '.ROOT_PATH.'<br />';
 
-// Desired folder structure
-$structure = './depth1/depth2/depth3/';
-
-// To create the nested structure, the $recursive parameter 
-// to mkdir() must be specified.
-
-if (!mkdir($structure, 0777, true)) {
-  die('Failed to create folders...');
+function scanDir(& $listFile, $rootDir, $dir = '', $flag = 0) {
+    $aryNotRequire = array(".", "..", ".svn", "_svn","",".DS_Store");
+    $hd = @opendir($rootDir . $dir);
+    while (false !== ($entry = @readdir($hd))) {
+        if (!in_array($entry, $aryNotRequire)) {
+            if (is_dir($rootDir . $dir.$entry)) {
+                echo 'DIR - <b>'.$entry.'</b><br />';
+                scanDir($listFile, $rootDir, $dir.$entry.'/');
+            }else{
+                echo $entry.'<br />';
+                if (in_array(substr($entry, -4), array('.php', 'php3', 'php4', 'php5'))) {
+                    $fileName = $rootDir. $dir.$entry;
+                    $tmp = explode('.', $entry);
+                    $class = substr($entry, 0, strlen($entry) - (strlen($tmp[count($tmp) - 1]) + 1));
+                    $listFile[$class] = $fileName;
+                }
+            }
+        }
+    }
+    closedir($hd);
 }
 
+scanDir($list, ROOT_PATH.'_cache');
