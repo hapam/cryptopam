@@ -29,4 +29,9 @@ function scanDir(& $listFile, $rootDir, $dir = '', $flag = 0) {
     closedir($hd);
 }
 
-scanDir($list, ROOT_PATH.'_cache');
+//scanDir($list, ROOT_PATH.'_cache');
+
+$hd = opendir(ROOT_PATH.'_cache');
+while (false !== ($entry = readdir($hd))) {
+    echo $entry.'<br />';
+}
