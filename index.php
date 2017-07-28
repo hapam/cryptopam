@@ -1,4 +1,5 @@
 <?php
+echo 1;exit();
 ob_start();//start buffering
 
 $rtime 		= microtime();
