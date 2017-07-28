@@ -22,4 +22,4 @@ $memcache_server =  array(
 define('MEMCACHE_ID','ezTool'); //Dung lam ID phan biet session giua cac site mini shop
 
 //cached file
-$server_list=array('goback.top');//server list to run multi cache file server
+$server_list=array('cryptopam.herokuapp.com');//server list to run multi cache file server
