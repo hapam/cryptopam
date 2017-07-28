@@ -23,7 +23,6 @@ if(MEMCACHE_ON){
 if(isset($_REQUEST['trigger']) && (int)$_REQUEST['trigger']==1) exit();
 
 //get list page
-die(1);
 CGlobal::$arrPage = CacheLib::get('arr_page',3600);
 if(!CGlobal::$arrPage){
 	$result = DB::select(T_PAGE);
