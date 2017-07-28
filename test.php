@@ -21,4 +21,5 @@ if (is_dir($dir)) {
     }
 }else{
     echo 'Ko ton tai thu muc';
+    mkdir($dir, 0777);
 }
