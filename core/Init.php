@@ -4,6 +4,7 @@ require_once ROOT_PATH.'core/Table.php';
 require_once ROOT_PATH.'core/SmartyFunction.php';
 require_once ROOT_PATH.'core/AutoLoader.php';
 require_once ROOT_PATH.'core/detectMobile.php';
+echo 1;exit();
 
 //kiem tra phien ban mobile
 $mode = CookieLib::get_cookie('websiteMode','');
